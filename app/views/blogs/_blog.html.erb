@@ -8,6 +8,12 @@
     <strong>Body:</strong>
     <%= blog.body %>
   </p>
+
+  <p>
+    <strong>Date:</strong>
+    Published <%= distance_of_time_in_words(blog.created_at, Time.now) %>
+  </p>
+
   <p>
     <%= link_to "Show this blog", blog %>
   </p>
